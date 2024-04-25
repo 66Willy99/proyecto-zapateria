@@ -54,7 +54,6 @@
 .row>*{
     border: solid 1px blue;
 }
-
 .navbar a:hover{
     color: #4764ae;
 }
