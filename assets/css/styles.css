@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .color-1 {
     color: #abc7e5;
 }
@@ -48,4 +51,10 @@
 
 .navbar a:hover{
     color: #4764ae;
+}
+.container{
+    border: solid 1px black;
+}
+.row>*{
+    border: solid 1px blue;
 }
