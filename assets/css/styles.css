@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .color-1 {
     color: #abc7e5;
 }
@@ -44,4 +47,10 @@
 
 .color-bg-6 {
     background-color: #3d518c;
+}
+.container{
+    border: solid 1px black;
+}
+.row>*{
+    border: solid 1px blue;
 }
