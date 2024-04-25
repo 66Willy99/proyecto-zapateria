@@ -9,20 +9,74 @@
 </head>
 <body>
     <!-- Cabecera de la pagina -->
-    <header class="container-fluid color-bg-1">
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg color-bg-2">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand color-6" href="./index.html">Zapateria San Antonio</a>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#productos">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
     <!-- Contenido Principal -->
-    <main class="container">
+    <!-- <a name="productos"></a> -->
+    <main class="container" name="productos">
     
     </main>
+
     <!-- Lista de productos -->
     <section class="container">
 
     </section>
-    <!-- Pie de pagina -->
-    <footer class="container-fluid">
 
+    <!-- Pie de pagina -->
+    <footer class="container-fluid py-5">
+        <div class="row">
+            <div class="text-center col-6 col-md">
+                <ul class="list-unstyled">
+                    <h5>Zapateria</h5>
+                    <h5>San Antonio</h5>
+                    <img src="..." alt="...">
+                </ul>
+            </div>
+            <div class="text-center col-6 col-md">
+            <h5>Redes Sociales</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+                <li><a class="link-secondary text-decoration-none" href="#">Whatsapp</a></li>
+            </ul>
+            </div>
+        </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
