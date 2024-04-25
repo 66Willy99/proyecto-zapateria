@@ -48,6 +48,10 @@
 .color-bg-6 {
     background-color: #3d518c;
 }
+
+.navbar a:hover{
+    color: #4764ae;
+}
 .container{
     border: solid 1px black;
 }
