@@ -1,0 +1,56 @@
+Zapatos Oxford de Cuero Marrón:
+Descripción: Zapatos clásicos de cuero marrón con punta redonda y cierre de cordones.
+Precio referencial: $100.
+Detalles:
+Material: Cuero genuino.
+Suela antideslizante.
+Forro interior de tela suave.
+Zapatillas Deportivas Blancas:
+Descripción: Zapatillas deportivas blancas con detalles en negro, suela gruesa y cierre de velcro.
+Precio referencial: $80.
+Detalles:
+Material: Sintético.
+Suela amortiguada.
+Diseño transpirable.
+Botines de Gamuza Negra:
+Descripción: Botines de gamuza negra con tacón bajo, detalle de hebilla lateral y cierre lateral con cremallera.
+Precio referencial: $120.
+Detalles:
+Material: Gamuza sintética.
+Plantilla acolchada.
+Altura del tacón: 5 cm.
+Sandalias Planas de Tiras Plateadas:
+Descripción: Sandalias planas de tiras plateadas con cierre de hebilla en el tobillo y detalle de pedrería.
+Precio referencial: $60.
+Detalles:
+Material: Sintético brillante.
+Suela flexible.
+Ajuste cómodo.
+Zapatos de Tacón Alto Rojos:
+Descripción: Zapatos de tacón alto rojos con punta en punta y diseño de charol.
+Precio referencial: $150.
+Detalles:
+Material: Charol sintético.
+Tacón fino.
+Plantilla acolchada para mayor comodidad.
+Mocasines de Cuero Negro:
+Descripción: Mocasines de cuero negro con detalle de borlas en la parte delantera y suela de goma.
+Precio referencial: $90.
+Detalles:
+Material: Cuero genuino.
+Suela flexible y duradera.
+Diseño sin cordones para un fácil deslizamiento.
+Botas de Montaña Impermeables:
+Descripción: Botas de montaña impermeables en tonos grises y negros, con cordones ajustables y suela adherente.
+Precio referencial: $130.
+Detalles:
+Material: Nylon y cuero.
+Membrana impermeable.
+Suela con agarre multidireccional.
+Alpargatas de Lona Azul Marino:
+Descripción: Alpargatas de lona azul marino con suela de yute trenzado y detalle de ribete blanco.
+Precio referencial: $40.
+Detalles:
+Material: Lona resistente.
+Suela de yute transpirable.
+Diseño ligero y casual.
