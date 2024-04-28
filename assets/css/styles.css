@@ -45,6 +45,22 @@
     color: #cec1b9;
     background-color: #825430;
 }
+.container{
+  background-image: url(/proyecto-zapateria/assets/img/img-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1300px;
+  height: 350px;
+  flex-direction: column;
+  padding: 225px 150px 230px 150px;
+  margin: 0 auto;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
 .container-fluid{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
