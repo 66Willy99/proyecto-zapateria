@@ -45,6 +45,7 @@
     color: #cec1b9;
     background-color: #825430;
 }
+
 .container{
   display: flex;
   flex-direction: column;
@@ -66,6 +67,7 @@
 .container p {
   font-size: 1.3rem;
 }
+
 .container-fluid{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
