@@ -32,13 +32,14 @@ btnSignUp.addEventListener("click", function(){
     }
     else{
         Swal.fire({
-            title: "¡Inicio de sesión exitoso!",
+            title: "¡Registro exitoso!",
             text: "",
-            icon: "success"
+            icon: "success",
+            showConfirmButton: false
           });
           setTimeout(function() {
             location.href = "./index.html";
-          }, 3000);
+          }, 2000);
           return; 
     }
 });
@@ -67,11 +68,12 @@ btnLogin.addEventListener("click", function(){
         Swal.fire({
             title: "¡Inicio de Sesión exitoso!",
             text: "",
-            icon: "success"
+            icon: "success",
+            showConfirmButton: false
           });
           setTimeout(function() {
             location.href = "./index.html";
-          }, 3000);
+          }, 2000);
           return; 
     }
 });
