@@ -13,20 +13,20 @@
 	<div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 
-			<div class="signup">
+			<div class="contact">
 				<form>
 					<label for="chk" aria-hidden="true">Contacto</label>
-					<input id="signup_user" type="text" name="txt" placeholder="Nombre" required="">
-					<input id="signup_email" type="email" name="email" placeholder="Correo" required="">
-					<input id="signup_password" type="tel" name="tel" placeholder="Telefono" required="">
-                    <textarea placeholder="Escribe tu mensaje aqui" tabindex="5" required></textarea>
-					<button type="button" id="signup">Enviar</button>
+					<input id="contact_name" type="text" name="txt" placeholder="Nombre" required="">
+					<input id="contact_email" type="email" name="email" placeholder="Correo" required="">
+					<input id="contact_number" class="no-spinner" type="number" name="tel" placeholder="Telefono" required="">
+                    <textarea id="contact_text" placeholder="Escribe tu mensaje aqui" tabindex="5" required></textarea>
+					<button type="button" id="enviar">Enviar</button>
 				</form>
 			</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./assets/js/login_script.js"> </script>
+    <script src="./assets/js/contact_script.js"> </script>
 </body>
 </html>
