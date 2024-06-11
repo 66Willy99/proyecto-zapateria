@@ -66,22 +66,27 @@ btnLogin.addEventListener("click", function () {
     else if(logPass != "" && logEmail != "" ){
       console.log("va");
       obtenerUser()
-          .then(Users=>{
-            console.log("xddd");
+          .then(users=>{
+            const foundUser = users.find(user => user.correo === logEmail && user.clave === logPass);
+            if (typeof(foundUser) === 'undefined') {
+                Swal.fire({
+                    title: "¡Clave o Correo incorrecto!",
+                    text: "",
+                    icon: "error"
+                  });
+            }else{
+                Swal.fire({
+                    title: "¡Inicio de Sesión exitoso!",
+                    text: "",
+                    icon: "success",
+                    showConfirmButton: false,
+                  });
+                    setTimeout(function () {
+                        location.href = "./index.html";
+                    }, 1000);
+                    return;
+            }
           })
           .catch((error) => console.log(`${typeof(error)}`));
-      console.log(Users);
-    }
-    else {
-      Swal.fire({
-        title: "¡Inicio de Sesión exitoso!",
-        text: "",
-        icon: "success",
-        showConfirmButton: false,
-      });
-        setTimeout(function () {
-            location.href = "./index.html";
-        }, 2000);
-        return;
     }
 });
