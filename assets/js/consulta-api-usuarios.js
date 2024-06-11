@@ -2,7 +2,7 @@ export const getUser = async() => {
 
     return new Promise(( resolve , reject )=> {
 
-        fetch("http://localhost:2006/api/usuarios")
+        fetch("http://localhost:3001/usuarios")
             .then((response)=> {
                 
                 if(!response.ok){
