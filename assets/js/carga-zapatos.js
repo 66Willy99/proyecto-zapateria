@@ -1,7 +1,8 @@
 const obtenerZapatos = async() =>{
+    
     try{
-        const response= await fetch("http://127.0.0.1:2006/api/zapatos");
-        const data = response.json;
+        const response= await fetch("https://api-zapatos-arq3.onrender.com/zapatos");
+        const data = response.json();
         return data;
     }
     catch(error){
@@ -11,5 +12,5 @@ const obtenerZapatos = async() =>{
 
 obtenerZapatos()
 .then((zapatos) =>{
-    console.log(zapatos.id) ;
+    console.log(zapatos);
 })
