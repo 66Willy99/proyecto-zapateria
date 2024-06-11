@@ -1,4 +1,4 @@
-import {getUser} from "./consulta-api.js";
+import {obtenerUser} from "./consulta-api-usuarios.js";
 
 let btnSignUp = document.getElementById("signup");
 let btnLogin = document.getElementById("login");
@@ -65,9 +65,11 @@ btnLogin.addEventListener("click", function () {
      }
     else if(logPass != "" && logEmail != "" ){
       console.log("va");
-      getUser()
-      .then( Users )
-      .catch( error => console.log(`El error es: ${error}`))
+      obtenerUser()
+          .then(Users=>{
+            console.log("xddd");
+          })
+          .catch((error) => console.log(`${typeof(error)}`));
       console.log(Users);
     }
     else {

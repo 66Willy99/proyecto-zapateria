@@ -1,21 +1,9 @@
-export const getUser = async() => {
-
-    return new Promise(( resolve , reject )=> {
-
-        fetch("http://localhost:3001/usuarios")
-            .then((response)=> {
-                
-                if(!response.ok){
-                    throw new Error(`Error`);
-                }
-
-                return response.json();
-            })
-            .then((data)=> {
-                resolve(data);
-            })
-            .catch(( error )=> {
-                reject(error);
-            })
-    });
-}
+export const obtenerUser = async() => {
+    try {
+        const response = await fetch("http://localhost:3001/users");
+        const data = response.json();
+        return data;
+    } catch (error) {
+        console.log(`el error es ${error}`);
+    }
+};

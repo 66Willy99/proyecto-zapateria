@@ -10,7 +10,7 @@ const obtenerZapatos = async () => {
 
 const crearTodasCards = (zapatos) => {
     let ZapatosRow = document.getElementById("ZapatosRow");
-
+    
     zapatos.map((zapato) => {
         const {
             id,
