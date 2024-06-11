@@ -1,4 +1,6 @@
-const obtenerZapatos = async () => {
+import { enviarZapato } from "./zapato.js";
+
+export const obtenerZapatos = async () => {
     try {
         const response = await fetch("http://localhost:2006/zapatos");
         const data = response.json();
@@ -20,7 +22,7 @@ const crearTodasCards = (zapatos) => {
             modelo,
             precioReferencial,
             stock,
-            detalles,
+            detalles
         } = zapato;
 
         // Card completo
@@ -35,8 +37,18 @@ const crearTodasCards = (zapatos) => {
         const divImgZapato = document.createElement("div");
         divImgZapato.classList.add("img");
 
-        const aImgZapato = document.createElement("a");
-        aImgZapato.href = "";
+        const aImgZapato = document.createElement("button");
+        aImgZapato.classList.add("btn");
+        aImgZapato.addEventListener("click",()=>{
+            enviarZapato(id,
+                nombre,
+                descripcion,
+                img,
+                modelo,
+                precioReferencial,
+                stock,
+                detalles)
+        });
 
         const imgZapato = document.createElement("img");
         imgZapato.src = img;
@@ -68,7 +80,6 @@ const crearTodasCards = (zapatos) => {
         for (const propiedad in detalles) {
             const liDetalle = document.createElement("li");
             liDetalle.textContent=`${propiedad}: ${detalles[propiedad]}`;
-            console.log(`${propiedad}: ${detalles[propiedad]}`);
             ulDetalles.appendChild(liDetalle);
         }
         pDescripcionProducto.appendChild(ulDetalles);
