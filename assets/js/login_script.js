@@ -1,7 +1,9 @@
-import {obtenerUser} from "./consulta-api-usuarios.js";
+import {obtenerUser, Registro} from "./consulta-api-usuarios.js";
 
 let btnSignUp = document.getElementById("signup");
 let btnLogin = document.getElementById("login");
+
+let LoginHTML = document.getElementById("BtnLogin");
 
 btnSignUp.addEventListener("click", function () {
     let signupUser = document.getElementById("signup_user").value;
@@ -29,18 +31,24 @@ btnSignUp.addEventListener("click", function () {
             icon: "warning",
         });
         return;
-    } else {
-        Swal.fire({
-            title: "¡Registro exitoso!",
-            text: "",
-            icon: "success",
-            showConfirmButton: false,
-        });
-        setTimeout(function () {
-            location.href = "./index.html";
-        }, 2000);
-        return;
-    }
+    } else if(signupEmail != "" && signupPass != "" && signupUser != ""){
+        console.log("va");
+
+            let datos = {
+                usuario: signupUser,
+                clave: signupPass,
+                correo: signupEmail
+            } 
+            console.log(datos);
+
+            let newUser = JSON.stringify(datos);
+            console.log(newUser.nombre);
+
+            Registro(newUser)
+            .then(newUser => {
+                location.href = "./index.html";
+            })
+      }
 });
 
 btnLogin.addEventListener("click", function () {
