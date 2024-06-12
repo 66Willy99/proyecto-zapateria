@@ -9,7 +9,7 @@ export const enviarZapato = (id,
     stock,
     detalles) =>{
 
-        const rutaArchivoHTML = "http://127.0.0.1:5501/proyecto-zapateria/zapato.html";
+        const rutaArchivoHTML = "http://127.0.0.1:5500/proyecto-zapateria/zapato.html";
 
         fetch(rutaArchivoHTML)
             .then(response => response.text())
@@ -28,7 +28,7 @@ export const enviarZapato = (id,
 
                 for (const propiedad in detalles) {
                     const det1Zapato=doc.getElementById("detail-"+propiedad);
-                    det1Zapato.textContent=`${detalles[propiedad]}`;
+                    det1Zapato.textContent=`${propiedad}: ${detalles[propiedad]}`;
                     console.log(`${propiedad}: ${detalles[propiedad]}`);
                 };
 
