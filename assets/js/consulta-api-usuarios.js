@@ -1,6 +1,6 @@
 export const obtenerUser = async() => {
     try {
-        const response = await fetch("http://localhost:3001/users");
+        const response = await fetch("https://api-usuarios-a0do.onrender.com/users");
         const data = await response.json();
         return data;
     } catch (error) {
@@ -10,7 +10,7 @@ export const obtenerUser = async() => {
 
 export const Registro = async(newUser) => {
     try {
-        const response = await fetch('http://localhost:3001/users/add', {
+        const response = await fetch('https://api-usuarios-a0do.onrender.com/users/add', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: newUser,

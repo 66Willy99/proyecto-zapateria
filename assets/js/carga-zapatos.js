@@ -2,7 +2,7 @@ import { enviarZapato } from "./zapato.js";
 
 export const obtenerZapatos = async () => {
     try {
-        const response = await fetch("http://localhost:2006/zapatos");
+        const response = await fetch("https://api-zapatos-arq3.onrender.com/zapatos");
         const data = response.json();
         return data;
     } catch (error) {
