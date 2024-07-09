@@ -7,9 +7,10 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #825430, #cec1b9, #7d4820);
+	flex-direction: column;
 }
 .main{
-	width: 350px;
+	width: 650px;
 	height: 500px;
 	background: red;
 	overflow: hidden;
